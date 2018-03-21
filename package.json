@@ -21,6 +21,7 @@
     "browser-sync": "^2.23.6",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-postcss": "^7.0.1",
     "gulp-stylus": "^2.7.0",
     "opn": "^5.2.0",
