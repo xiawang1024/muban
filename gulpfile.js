@@ -4,6 +4,7 @@ const postcss = require('gulp-postcss')
 
 const stylus = require('gulp-stylus')
 
+const imagemin = require('gulp-imagemin')
 
 const autoprefixer = require('autoprefixer'); //自动加上浏览器前缀
 
@@ -54,6 +55,11 @@ gulp.task('wx-css', () => {
         .pipe(gulp.dest('./dist/css'));
 })
 
+gulp.task('wx-css1',() => {
+    gulp.src('./css/*.css')
+        .pipe(gulp.dest('dist/css'))
+})
+
 gulp.task('wx-img', function() {
     gulp.src('./img/*.{png,jpg,gif,ico}')
         .pipe(imagemin({
@@ -88,7 +94,7 @@ let path = {
 
 // 任务列表
 // const TASK = ['wx-css', 'wx-js', 'wx-img', 'wx-html']
-const TASK = ['wx-css','wx-js','wx-html']
+const TASK = ['wx-css','wx-js','wx-img','wx-css1','wx-html']
 
 gulp.task('default', TASK, function(){    
     //打开静态服务器
