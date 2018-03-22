@@ -7,4 +7,10 @@ var lottery = new LotteryCard(document.getElementById('js_lottery'),{
 lottery.on('start',function(){
   //中奖结果，传递是中奖结果图片地址
   lottery.setResult('../img/icon-no.png');
-}).on('end',function(){}).on('reset',function(){});
+}).on('end',function(){
+  $(document).dialog({      
+    overlayClose:true,
+    titleShow: false,
+    content: '不好意思，再接再厉',
+  });
+}).on('reset',function(){});
