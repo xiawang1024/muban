@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js"></script>
+    <script> 
+        window.onload = function () { 
+            window.viewportUnitsBuggyfill.init({ 
+                hacks: window.viewportUnitsBuggyfillHacks
+            });            
+        } 
+    </script>    
+    <link rel="stylesheet" href="./css/index.css">
+    <title>答题活动</title>
+</head>
+<body>    
+    <div class="g-bd">
+        <div class="answer">
+            <h2 class="title">
+                新媒体全互动支持微信公众号的自定义菜单管理吗？
+            </h2>
+            <p class="tips">该活动为单选</p>
+            <form class="form" id="answer">
+                <div class="select-wrap">
+                    <div class="title">
+                        <span class="order">1.</span>
+                        <span class="text">支持</span>
+                    </div>
+                    <div class="select">
+                        <label class="icon-select z-cur" for="selectBtn1"></label>
+                        <input id="selectBtn1" type="radio" name="active" checked>
+                    </div>
+                </div>
+                <div class="select-wrap">
+                    <div class="title">
+                        <span class="order">2.</span>
+                        <span class="text">不支持</span>
+                    </div>
+                    <div class="select">
+                        <label class="icon-select" for="selectBtn2"></label>
+                        <input id="selectBtn2" type="radio" name="active">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

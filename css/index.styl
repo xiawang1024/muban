@@ -19,7 +19,7 @@ body
         left 20px
         right 20px     
         padding 30px   
-        background: rgba(255,255,255,0.7)
+        background: rgba(255,255,255,0.8)
         box-sizing: border-box
         .signUp-pre
             width: 100%
@@ -142,8 +142,54 @@ body
                 margin 120px auto 0
                 width: 242px
                 height: 65px
-                        
-
+        .answer
+            position absolute
+            top 0
+            bottom 105px
+            left 0
+            width: 100%
+            padding 50px 40px
+            box-sizing: border-box
+            overflow auto
+            -webkit-overflow-scrolling: touch
+            .title
+                font-size: 34px
+                line-height: 1.5            
+            .tips
+                width: 100%
+                margin-top: 20px
+                text-align: center
+                font-size: 20px
+                color #fa2c2c
+            .form
+                display: block
+                width: 512px
+                margin 150px auto 0
+                .select-wrap
+                    display: flex
+                    align-items: center
+                    margin-bottom: 50px
+                    .title
+                        width 460px
+                        font-size: 29px
+                        color #333333
+                        border-bottom-1px(#b6b6b6)
+                        .order
+                            color #0081dc
+                    .select
+                        width: 45px
+                        margin-left: 6px
+                        .icon-select
+                            display inline-block
+                            width: 44px
+                            height: 44px
+                            background: url('../img/icon-answer-no.png') center center no-repeat
+                            background-size: cover
+                            &.z-cur
+                                background: url('../img/icon-answer-yes.png') center center no-repeat
+                                background-size: cover
+                        input
+                            display none
 
         
 
