@@ -22,7 +22,7 @@ $(document).on('click','#signUpBtn',function() {
     $(document).dialog({      
       overlayClose:true,
       titleShow: false,
-      content: '请填写标*号的信息！',
+      content: '请填写标 <span style="color:#f00">*</span> 号的信息！',
     });
     return 
   }
