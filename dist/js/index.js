@@ -32,8 +32,11 @@ $(document).on('click','#signUpBtn',function() {
 // 报名end
 
 // 答题单选
-$('#answer .icon-select').click(function() {
-  console.log(11)
-  $('.icon-select').removeClass('z-cur')
-  $(this).addClass('z-cur')
+$(document).on('click','#submitBtn',function(e) {
+  e.preventDefault()
+  $(document).dialog({      
+    overlayClose:true,
+    titleShow: false,
+    content: '感谢您的提交！',
+  });
 })
