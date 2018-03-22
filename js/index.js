@@ -1,7 +1,7 @@
 //移动端实现button:active
 document.addEventListener('touchstart',function(){},false);
 
-//报名start
+//报名
 $('#protocol').on('change',function() {
   if($(this).prop("checked")){
     $('.icon-select').addClass('z-cur')
@@ -29,14 +29,35 @@ $(document).on('click','#signUpBtn',function() {
     return 
   }
 })
-// 报名end
 
-// 答题单选
-$(document).on('click','#submitBtn',function(e) {
+
+// 答题
+$(document).on('click','#answerBtn',function(e) {
   e.preventDefault()
   $(document).dialog({      
     overlayClose:true,
     titleShow: false,
     content: '感谢您的提交！',
   });
+})
+
+// 投票
+$(document).on('click','#voteBtn',function(e) {
+  e.preventDefault()
+  var voteValue = $('input[name="vote"]:checked').val()
+  console.log(voteValue)
+  if(voteValue){
+    $(document).dialog({      
+      type:'notice',
+      infoText:'正在提交中...',
+      autoClose:2500    
+    });
+  }else{
+    $(document).dialog({      
+      overlayClose:true,
+      titleShow: false,
+      content: '请您选择一个投票！',
+    });
+  }
+  
 })
