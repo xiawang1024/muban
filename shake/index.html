@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/shake.css">
+		
+		<title>摇一摇</title>
+		
+	</head>
+	<body>
+		<div class="audio" style="width:0; height:0px; overflow:hidden; text-indent:-999px;">
+			<audio id="audio" src="audio/shake.mp3" style="width:0; height:0px;"></audio>
+		</div>
+		<div class="content">
+			<div class="indexbg">
+				<img class="indexBg" src="images/indexbg.png">
+				<img class="shakeimg" src="images/shake.png">
+				<img class="cp" src="images/cp.png">
+			</div>
+			<div class="nav">
+				<ul class="clearfix">
+					<li onclick="document.getElementById('hdsm').style.display='block';document.getElementById('hdsmContent').style.display='block';"><a href="#"><img src="images/hdsm.png"><p>活动说明</p></a></li>
+					<li><a href="zjjl.html"><img src="images/zjjl.png"><p>中奖纪录</p></a></li>
+					<li onclick="document.getElementById('hdsm').style.display='block';document.getElementById('fx').style.display='block';"><a href="#"><img src="images/fx.png"><p>分享</p></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="power">你好世界!</div>
+        
+        
+        
+		<div id="hdsm">
+			<div id="hdsmContent" class="hdsmContent">
+				<h3>活动说明</h3>
+				<div class="back"><a href="javascrpit:void(0)" onclick="document.getElementById('hdsm').style.display='none';document.getElementById('hdsmContent').style.display='none';"><img src="images/X.png"></a></div>
+				<div class="pContent">
+					<p>活动说明活动说明活说明活动说明活动说明活动说明活说明活动说明活动说明活动说明</p>
+					<p>活动说明活动说明活动说明活动说明活动说明活说明活动说明活动说明活动说明活动说明活动说明</p>
+					<p>活动说明活动说明活说明活动说明活动说明活动说明活活动说明活动说明活动说明活动说明</p>
+					<p>活动说明说明活动说明活动说明活动说明活说明活动说明活动说明活动说明活明活动说明活动说明活动说明活动说明</p>
+					<p>活动说明说明活动说明活动说明活动说明活说明活动说明活动说明活动说明活明活动说明活动说明活动说明活动说明</p>
+					<p>活动说明说明活动说明活动说明活动说明活说明活动说明活动说明活动说明活明活动说明活动说明活动说明活动说明</p>
+					<p>活动说明说明活动说明活动说明活动说明活说明活动说明活动说明活动说明活明活动说明活动说明活动说明活动说明</p>
+				</div>
+			</div>
+			<div id="fx">
+				<img src="images/fxbg.png">
+			</div>
+		</div>
+		<script src="./js/zepto.js"></script>
+		<script type="text/javascript" src="js/shake.js"></script>
+		<script type="text/javascript">
+			function playAudio(){
+				if (window.HTMLAudioElement) {
+					var oAudio = document.getElementById('audio');
+					oAudio.play();
+				}
+			}
+			window.onload = function() {
+			
+				//create a new instance of shake.js.
+				var myShakeEvent = new Shake({
+					threshold: 10
+				});
+			
+				// start listening to device motion
+				myShakeEvent.start();
+			
+				// register a shake event
+				window.addEventListener('shake', shakeEventDidOccur, false);
+			
+				//shake event callback
+				function shakeEventDidOccur () {
+			
+					//put your own code here etc.
+					$('.shakeimg').removeClass('shake');
+					setTimeout(function(){$('.shakeimg').addClass('shake')},0)
+					setTimeout(function () { $('.shakeimg').removeClass('shake') },2000)
+					playAudio();
+				}
+			};
+		</script>
+	</body>
+</html>
