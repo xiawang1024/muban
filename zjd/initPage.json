@@ -1,0 +1,45 @@
+{
+    "status": 0, 
+    "msg": "", 
+    "data": {
+        "prizes_small": [
+            {
+                "img_adress": "/ToolFiles/UpFile/Img/Links/20180327/20180327143015_7584.jpg", 
+                "alt": "恭喜抽中：“啄木鸟”店铺通用优惠券", 
+                "link": "https://haohuo.snssdk.com/views/coupon/coupondetail?coupon_meta_id=6537503150130069773", 
+                "id": 15
+            }
+        ], 
+        "extra_activity": null, 
+        "broadcast_msg": [
+            "恭喜182****6116获得10万额度环球黑卡", 
+            "恭喜182****6116获得10万额度环球黑卡", 
+            "恭喜182****8361获得100元现金红包", 
+            "恭喜182****8361获得200元现金抵扣券", 
+            "恭喜182****8361获得1000元理财体验金"
+        ], 
+        "remain_prizes": {
+            "status": {
+                "_1": true, 
+                "_2": true, 
+                "_3": true, 
+                "_4": true, 
+                "_5": true, 
+                "_6": false
+            }, 
+            "num": 2
+        }, 
+        "prize_big": {
+            "img_adress": "/ToolFiles/UpFile/Img/Links/20180327/20180327143008_3005.jpg", 
+            "alt": "恭喜抽中：“啄木鸟”店铺通用优惠券", 
+            "link": "https://haohuo.snssdk.com/views/coupon/coupondetail?coupon_meta_id=6537503150130069773", 
+            "id": 15
+        }, 
+        "ios_notice": "", 
+        "activity_rules": [
+            "1.本活动80%中奖，有iPhoneX、现金红包、流量话费、低价折扣券、彩票红包、贷款红包、理财红包、神秘奖品等多个奖项。", 
+            "2.本活动为概率中奖，每个奖品每日发放数量有限，祝君好运。", 
+            "3.本活动最终解释权归活动举办方所有，若有疑问请联系客服：0755-82102029"
+        ]
+    }
+}

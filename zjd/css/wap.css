@@ -1,0 +1,453 @@
+/*鏍瑰厓绱�*/
+.root {
+    background-color: #fdec53;
+    background-image: url(../images/wap-body-bg-iphoneX.jpg);
+  }
+  .root.iphoneX {
+    background-image: url(../images/wap-body-bg-iphoneX.jpg);
+  }
+  .root.mysterious {
+    background-image: url(../images/wap-body-bg-mysterious.jpg);
+  }
+  .foot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 7.5rem;
+    height: 2.2rem;
+    background: url(../images/wap-bottom-bg.png) 0 0 no-repeat;
+    -webkit-background-size: 7.5rem 7.5rem;
+       -moz-background-size: 7.5rem;
+         -o-background-size: 7.5rem;
+            background-size: 7.5rem;
+  }
+  
+  /*閲戣泲*/
+  .prize-item-box {
+    position: absolute;
+    width: 2.8rem;
+    height: 3.25rem;
+    z-index: 4;
+  }
+  .prize-item-box.one {
+    top: 2.9rem;
+    left: 2.6rem;
+  }
+  .prize-item-box.two {
+    top: 4.55rem;
+    right: 0rem;
+  }
+  .prize-item-box.three {
+    top: 7.6rem;
+    right: 0rem;
+  }
+  .prize-item-box.four {
+    top: 4.55rem;
+    left: 0rem;
+  }
+  .prize-item-box.five {
+    top: 7.6rem;
+    left: 0rem;
+    z-index: 5;
+  }
+  .prize-item-box.six {
+    top: 5.95rem;
+    left: 2.35rem;
+  }
+  .prize-item-box .prize-item,
+  .prize-item-box .egg-plate,
+  .prize-item-box .tool,
+  .tool-fixed {
+    background-image: url(../images/wap-main-icons.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 6rem 6rem;
+       -moz-background-size: 6rem;
+         -o-background-size: 6rem;
+            background-size: 6rem;
+  }
+  .prize-item-box .prize-item {
+    position: relative;
+    width: 2rem;
+    height: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: 0.12rem 0;
+    z-index: 2;
+  }
+  .prize-item-box .prize-item.active {
+    width: 2.8rem;
+    background-position: .06rem -3.6rem;
+  }
+  .prize-item-box .prize-item.swing {
+    -webkit-animation: eggSwing .6s;
+       -moz-animation: eggSwing .6s;
+         -o-animation: eggSwing .6s;
+            animation: eggSwing .6s;
+  }
+  .prize-item-box .egg-plate {
+    position: absolute;
+    top: .8rem;
+    left: 50%;
+    margin-left: -1.13rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-position: right 0;
+    z-index: 1;
+  }
+  .prize-item-box .tool {
+    position: absolute;
+    top: -1.4rem;
+    right: -.6rem;
+    width: 2.52rem;
+    height: 1.95rem;
+    background-position: right -4.05rem;
+    display: none;
+    z-index: 3;
+  }
+  
+  /*鎶藉宸ュ叿*/
+  .prize-item-box .tool,
+  .tool-fixed {
+    position: absolute;
+    width: 2.52rem;
+    height: 1.95rem;
+    background-position: right bottom;
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .prize-item-box .tool {
+    -webkit-animation: toolSwing .5s ease-in forwards;
+       -moz-animation: toolSwing .5s ease-in forwards;
+         -o-animation: toolSwing .5s ease-in forwards;
+            animation: toolSwing .5s ease-in forwards;
+  }
+  .tool-fixed {
+    top: 8.8rem;
+    left: 2.8rem;
+    -webkit-animation: toolRegularSwing 1s infinite ease-in-out;
+       -moz-animation: toolRegularSwing 1s infinite ease-in-out;
+         -o-animation: toolRegularSwing 1s infinite ease-in-out;
+            animation: toolRegularSwing 1s infinite ease-in-out;
+    z-index: 4;
+  }
+  
+  /*骞挎挱*/
+  .broadcast {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .broadcast>ul>li {
+    color: #ff1a6e;
+  }
+  
+  /*鎻愮ず璇�*/
+  .ios-notice {
+    color: #fff;
+  }
+  
+  /*鎶藉宸ュ叿瑙勫緥鎽嗗姩*/
+  @-webkit-keyframes toolRegularSwing {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg)
+    }
+  
+    15% {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg)
+    }
+  
+    30% {
+      -webkit-transform: rotate(-20deg);
+              transform: rotate(-20deg)
+    }
+  
+    45% {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg)
+    }
+  
+    to {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg)
+    }
+  
+  }
+  @-moz-keyframes toolRegularSwing {
+    0% {
+      -moz-transform: rotate(0deg);
+           transform: rotate(0deg)
+    }
+  
+    15% {
+      -moz-transform: rotate(-40deg);
+           transform: rotate(-40deg)
+    }
+  
+    30% {
+      -moz-transform: rotate(-20deg);
+           transform: rotate(-20deg)
+    }
+  
+    45% {
+      -moz-transform: rotate(-40deg);
+           transform: rotate(-40deg)
+    }
+  
+    to {
+      -moz-transform: rotate(0deg);
+           transform: rotate(0deg)
+    }
+  
+  }
+  @-o-keyframes toolRegularSwing {
+    0% {
+      -o-transform: rotate(0deg);
+         transform: rotate(0deg)
+    }
+  
+    15% {
+      -o-transform: rotate(-40deg);
+         transform: rotate(-40deg)
+    }
+  
+    30% {
+      -o-transform: rotate(-20deg);
+         transform: rotate(-20deg)
+    }
+  
+    45% {
+      -o-transform: rotate(-40deg);
+         transform: rotate(-40deg)
+    }
+  
+    to {
+      -o-transform: rotate(0deg);
+         transform: rotate(0deg)
+    }
+  
+  }
+  @keyframes toolRegularSwing {
+    0% {
+      -webkit-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+           -o-transform: rotate(0deg);
+              transform: rotate(0deg)
+    }
+  
+    15% {
+      -webkit-transform: rotate(-40deg);
+         -moz-transform: rotate(-40deg);
+           -o-transform: rotate(-40deg);
+              transform: rotate(-40deg)
+    }
+  
+    30% {
+      -webkit-transform: rotate(-20deg);
+         -moz-transform: rotate(-20deg);
+           -o-transform: rotate(-20deg);
+              transform: rotate(-20deg)
+    }
+  
+    45% {
+      -webkit-transform: rotate(-40deg);
+         -moz-transform: rotate(-40deg);
+           -o-transform: rotate(-40deg);
+              transform: rotate(-40deg)
+    }
+  
+    to {
+      -webkit-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+           -o-transform: rotate(0deg);
+              transform: rotate(0deg)
+    }
+  
+  }
+  
+  /*鎶藉鏃舵娊濂栧伐鍏峰姩鐢�*/
+  @-webkit-keyframes toolSwing {
+    0% {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg)
+    }
+  
+    20% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg)
+    }
+  
+    40% {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg)
+    }
+  
+    to {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg)
+    }
+  
+  }
+  @-moz-keyframes toolSwing {
+    0% {
+      -moz-transform: rotate(40deg);
+           transform: rotate(40deg)
+    }
+  
+    20% {
+      -moz-transform: rotate(10deg);
+           transform: rotate(10deg)
+    }
+  
+    40% {
+      -moz-transform: rotate(40deg);
+           transform: rotate(40deg)
+    }
+  
+    to {
+      -moz-transform: rotate(10deg);
+           transform: rotate(10deg)
+    }
+  
+  }
+  @-o-keyframes toolSwing {
+    0% {
+      -o-transform: rotate(40deg);
+         transform: rotate(40deg)
+    }
+  
+    20% {
+      -o-transform: rotate(10deg);
+         transform: rotate(10deg)
+    }
+  
+    40% {
+      -o-transform: rotate(40deg);
+         transform: rotate(40deg)
+    }
+  
+    to {
+      -o-transform: rotate(10deg);
+         transform: rotate(10deg)
+    }
+  
+  }
+  @keyframes toolSwing {
+    0% {
+      -webkit-transform: rotate(40deg);
+         -moz-transform: rotate(40deg);
+           -o-transform: rotate(40deg);
+              transform: rotate(40deg)
+    }
+  
+    20% {
+      -webkit-transform: rotate(10deg);
+         -moz-transform: rotate(10deg);
+           -o-transform: rotate(10deg);
+              transform: rotate(10deg)
+    }
+  
+    40% {
+      -webkit-transform: rotate(40deg);
+         -moz-transform: rotate(40deg);
+           -o-transform: rotate(40deg);
+              transform: rotate(40deg)
+    }
+  
+    to {
+      -webkit-transform: rotate(10deg);
+         -moz-transform: rotate(10deg);
+           -o-transform: rotate(10deg);
+              transform: rotate(10deg)
+    }
+  
+  }
+  
+  /*濂栧搧鏅冨姩*/
+  @-webkit-keyframes eggSwing {
+  
+    12.5%,62.5% {
+      -webkit-transform: rotate(-15deg);
+              transform: rotate(-15deg);
+    }
+    0%, 25%,50%,75%,100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    37.5%,62.5%,87.5% {
+      -webkit-transform: rotate(15deg);
+              transform: rotate(15deg);
+    }
+  
+  }
+  @-moz-keyframes eggSwing {
+  
+    12.5%,62.5% {
+      -moz-transform: rotate(-15deg);
+           transform: rotate(-15deg);
+    }
+    0%, 25%,50%,75%,100% {
+      -moz-transform: rotate(0deg);
+           transform: rotate(0deg);
+    }
+    37.5%,62.5%,87.5% {
+      -moz-transform: rotate(15deg);
+           transform: rotate(15deg);
+    }
+  
+  }
+  @-o-keyframes eggSwing {
+  
+    12.5%,62.5% {
+      -o-transform: rotate(-15deg);
+         transform: rotate(-15deg);
+    }
+    0%, 25%,50%,75%,100% {
+      -o-transform: rotate(0deg);
+         transform: rotate(0deg);
+    }
+    37.5%,62.5%,87.5% {
+      -o-transform: rotate(15deg);
+         transform: rotate(15deg);
+    }
+  
+  }
+  @keyframes eggSwing {
+  
+    12.5%,62.5% {
+      -webkit-transform: rotate(-15deg);
+         -moz-transform: rotate(-15deg);
+           -o-transform: rotate(-15deg);
+              transform: rotate(-15deg);
+    }
+    0%, 25%,50%,75%,100% {
+      -webkit-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+           -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    37.5%,62.5%,87.5% {
+      -webkit-transform: rotate(15deg);
+         -moz-transform: rotate(15deg);
+           -o-transform: rotate(15deg);
+              transform: rotate(15deg);
+    }
+  
+  }
+  
+  .footer {
+      position: absolute;
+      left: 0;
+      bottom: 0.15rem;
+      width: 7.5rem;
+      margin: 0 auto;
+      padding-bottom: 0.2rem;
+      background: transparent;
+  }
+  .footer p {
+      font-size: 0.2rem;
+      color: #fff;
+      text-align: center;
+  }

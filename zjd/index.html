@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+
+<head>
+    <title>支付福利</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="支付福利">
+    <meta name="description" content="支付福利">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/css/wap-lottery.css?v=1.0.5">
+    <link rel="stylesheet" href="/css/wap.css?v=1.0.8">
+    <script src="https://hm.baidu.com/hm.js?11364ef07984f84df18cf42723960d52"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script>
+        window.onpageshow = function (e) {
+            if (e.persisted) {
+                window.location.reload(true)
+            }
+        }
+    </script>
+    <script type="application/javascript">
+        $(function () {
+            pushHistory();
+            window.addEventListener("popstate", function (e) {
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                    WeixinJSBridge.call('closeWindow'); //微信 
+                } else if (ua.indexOf("alipay") != -1) {
+                    AlipayJSBridge.call('closeWebview'); //支付宝 
+                } else if (ua.indexOf("baidu") != -1) {
+                    BLightApp.closeWindow(); //百度钱包
+
+                }
+            }, false);
+
+            function pushHistory() {
+                var state = {
+                    title: "title",
+                    url: "#"
+                };
+                window.history.pushState(state, "title", "#");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <input id="prize-interface" type="hidden" value="/activity/pick_prize?owner=hn%3Asmash_egg_new&amp;spm=false_back_lanjie&amp;sc=wowzfcpczfb1_f&amp;name=smash_egg">
+
+    <div class="root mysterious" id="root" style="height: 812px;">
+        <div class="button-box">
+            <a href="javascript:;">活动规则</a>
+            <a href="javascript:;">我的奖品</a>
+        </div>
+        <div class="prize-item-box one">
+            <div class="prize-item" data-prizeid="1"></div>
+            <div class="egg-plate"></div>
+            <div class="tool"></div>
+        </div>
+        <div class="prize-item-box two">
+            <div class="prize-item" data-prizeid="2"></div>
+            <div class="egg-plate"></div>
+            <div class="tool"></div>
+        </div>
+        <div class="prize-item-box three">
+            <div class="prize-item swing" data-prizeid="3"></div>
+            <div class="egg-plate"></div>
+            <div class="tool"></div>
+        </div>
+        <div class="prize-item-box four">
+            <div class="prize-item" data-prizeid="4"></div>
+            <div class="egg-plate"></div>
+            <div class="tool"></div>
+        </div>
+        <div class="prize-item-box five">
+            <div class="prize-item" data-prizeid="5"></div>
+            <div class="egg-plate"></div>
+            <div class="tool"></div>
+        </div>
+        <div class="prize-item-box six">
+            <div class="prize-item" data-prizeid="6"></div>
+            <div class="egg-plate"></div>
+            <div class="tool"></div>
+        </div>
+        <div class="tool-fixed" id="tool-fixed"></div>
+        <div class="broadcast" id="broadcast">
+            <ul style="height: 300px; top: -150px;">
+                <li>恭喜182****6116获得10万额度环球黑卡</li>
+                <li>恭喜182****6116获得10万额度环球黑卡</li>
+                <li>恭喜182****8361获得100元现金红包</li>
+                <li>恭喜182****8361获得200元现金抵扣券</li>
+                <li>恭喜182****8361获得1000元理财体验金</li>
+                <li>恭喜182****6116获得10万额度环球黑卡</li>
+                <li>恭喜182****6116获得10万额度环球黑卡</li>
+                <li>恭喜182****8361获得100元现金红包</li>
+                <li>恭喜182****8361获得200元现金抵扣券</li>
+                <li>恭喜182****8361获得1000元理财体验金</li>
+            </ul>
+        </div>
+        <div class="mask" id="mask"></div>
+        <div class="modal-box" id="modal-box">
+            <div class="ellipse-text all-prizes-box"></div>
+            <div class="snowman all-prizes-box"></div>
+            <h3></h3>
+            <div class="modal-content">
+                <div class="modal-message-box" id="modal-message-box">
+                    <p>1.本活动80%中奖，有iPhoneX、现金红包、流量话费、低价折扣券、彩票红包、贷款红包、理财红包、神秘奖品等多个奖项。</p>
+                    <p>2.本活动为概率中奖，每个奖品每日发放数量有限，祝君好运。</p>
+                    <p>3.本活动最终解释权归活动举办方所有，若有疑问请联系客服：0755-82102029</p>
+                </div>
+                <div class="modal-all-prizes-box" id="modal-all-prizes-box">
+                    <p>要记得先抽奖哦！</p>
+                </div>
+                <div class="modal-single-prize-box" id="modal-single-prize-box"></div>
+            </div>
+            <a class="close-btn" id="close-btn" href="javascript:;"></a>
+            <div class="modal-gold left-top"></div>
+            <div class="modal-gold right-bottom"></div>
+            <div class="modal-gold one"></div>
+            <div class="modal-gold two"></div>
+            <div class="modal-gold three"></div>
+            <div class="modal-gold four"></div>
+            <div class="modal-gold five"></div>
+            <div class="modal-gold six"></div>
+        </div>
+        <div class="modal-intercept-box" id="modal-intercept-box">
+            <p>该活动抽奖次数已用完</p>
+            <h2>拼手气继续抢福利</h2>
+            <div class="lottery-product-box"></div>
+            <a class="close-btn" id="intercept-close-btn" href="javascript:;"></a>
+        </div>
+        <div class="light-beam-box" id="light-beam-box">
+            <div class="light-beam">
+                <div class="beam beam-1"></div>
+                <div class="beam beam-2"></div>
+                <div class="beam beam-3"></div>
+                <div class="beam beam-4"></div>
+                <div class="beam beam-5"></div>
+                <div class="beam beam-6"></div>
+                <div class="beam beam-7"></div>
+                <div class="beam beam-8"></div>
+                <div class="beam beam-9"></div>
+                <div class="beam beam-10"></div>
+                <div class="beam beam-11"></div>
+                <div class="beam beam-12"></div>
+            </div>
+        </div>
+        <div class="modal-ribbon" id="modal-ribbon"></div>
+        <div class="more-draw-btn" id="more-draw-btn" style="display: none;"></div>
+        <div class="footer">
+            <p>未来百货电子商务（深圳）有限公司</p>
+            <p>粤ICP备17021406号</p>
+        </div>
+        <div class="foot"></div>
+        <p class="ios-notice"></p>
+    </div>
+    <script src="/js/wap-tool.js"></script>
+    <script src="/js/wap.js"></script>
+
+</body>
+
+</html>
