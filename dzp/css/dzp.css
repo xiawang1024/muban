@@ -1,0 +1,504 @@
+*{
+    font-family: 微软雅黑;
+    letter-spacing: 2px;
+}
+.container{
+    width:750px;
+    height:1772px;
+    /*background:url("images/dail/sqb_dail_bg.jpg?a=3") no-repeat center center;*/
+    position:relative;
+    overflow: hidden;
+}
+/*转盘*/
+.dail{
+    position: relative;
+    width:630px;
+    margin:0px auto;
+    margin-top:20px;
+}
+.dail_content{
+    position: absolute;
+    top:39px;
+    left:38px;
+    transition: 0.45s;
+    transition-timing-function: linear;
+    transform:rotate(0deg);
+}
+.dail_button{
+    position: absolute;
+    top:181px;
+    left:221px;
+}
+/*中奖弹出框*/
+.reward{
+    width:750px;
+    height:1692px;
+    background: rgba(0,0,0,0.8);
+    position:absolute;
+    top:0px;
+    z-index:20;
+    display:none;
+}
+.reward_img{
+    display:block;
+    position:absolute;
+    left:75px;
+}
+.reward_close{
+    position:absolute;
+    top:111px;
+    right:70px;
+    overflow: hidden;
+}
+.reward_box{
+    position:relative;
+
+}
+.reward_title{
+    width:322px;
+    height:58px;
+    position:absolute;
+    left:216px;
+    top:432px;
+    font-size:3.1rem;
+    color:#fff;
+    line-height: 58px;
+    text-align: center;
+}
+.reward_info{
+    width:480px;
+    height:217px;
+    position:absolute;
+    top:575px;
+    left:134px;
+}
+.reward_info img{
+    float: left;
+    width:480px;
+    height:217px;
+}
+.rule{
+    width:750px;
+    height:1217px;
+    background: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0px;
+    z-index:20;
+    letter-spacing:2px;
+    display:none;
+}
+.rule_content{
+    width: 602px;
+    padding:22px;
+    background: linear-gradient(#fd384e, #fe384f);
+    margin:0px auto;
+    margin-top:57px;
+    border-radius:12px;
+    position:relative;
+}
+.rule h2{
+    font-size: 3.6rem;
+    color:#fff;
+    text-align: center;
+}
+.explain{
+    color:#fff;
+    font-size:2.4rem;
+    line-height: 3rem;
+    margin-bottom:20px;
+}
+.rule_award li{
+    font-size:2.4rem;
+    color:#ffea00;
+    height:34px;
+    line-height: 34px;
+}
+.rule_statement li{
+    font-size:1.8rem;
+    color:#fff;
+    line-height: 3rem;
+}
+.imaginary_line{
+    border-bottom: 1px dashed #fff;
+    width:314px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.remove_explain{
+    font-size:1.8rem;
+    color:#fff;
+    line-height: 3rem;
+}
+.rule_colse{
+    width:35px;
+    height:35px;
+    border-radius: 35px;
+    background:#ad181f;
+    position: absolute;
+    top:12px;
+    right:12px;
+    font-size:24px;
+    text-indent: 10px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.rule_colse img{
+    float: left;
+    width:35px;
+}
+.my_reward{
+    width:750px;
+    height:1692px;
+    background: #f0f0f0;
+    position:absolute;
+    top:0px;
+    z-index:20;
+    letter-spacing:2px;
+    display:none;
+}
+.my_reward .top{
+    height:60px;
+    width:657px;
+    margin:0px auto;
+    background:#fb384e;
+    border-radius:30px;
+    margin-top:14px;
+    margin-bottom:14px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.top div{
+    float:left;
+    font-size:2.5rem;
+    color:#fff;
+    margin-left:37px;
+}
+.top_service{
+    margin-right:20px;
+}
+.top img{
+    position: relative;
+    top:10px;
+}
+.reward_coupon_img{
+    width:350px;
+    height:176px;
+    float: left;
+}
+.reward_coupon_img img{
+    display: block;
+    float:left;
+    margin:24px;
+    width:288px;
+    height:130px;
+}
+.reward_content{
+    width:353px;
+    height:176px;
+    float:left;
+}
+.reward_list{
+    overflow: hidden;
+}
+.reward_content h3{
+    font-size:3rem;
+    color:#353535;
+    margin-top:56px;
+}
+.reward_content p{
+    font-size:1.8rem;
+    color:#353535;
+    margin-top:20px;
+}
+.reward_list li{
+    position: relative;
+    overflow: hidden;
+    margin-bottom:3px;
+    background:#fff;
+}
+.reward_list li .go{
+    position: absolute;
+    right:34px;
+    top:78px;
+}
+.reward_button{
+    width: 150px;
+    height:238px;
+    position: absolute;
+    right:-51px;
+    top:-94px;
+    transform:rotate(135deg);
+}
+.reward_use{
+    width:562px;
+    height:107px;
+    position: absolute;
+    top:903px;
+    left:95px;
+}
+.reward_button{
+    width: 150px;
+    height:238px;
+    position: absolute;
+    right:-51px;
+    top:-94px;
+    transform:rotate(135deg);
+}
+.reward_coupon_img{
+    width:350px;
+    height:176px;
+    float: left;
+}
+.reward_coupon_img img{
+    display: block;
+    float:left;
+    margin:24px;
+    width:288px;
+    height:130px;
+}
+.reward_content{
+    width:353px;
+    height:176px;
+    float:left;
+}
+.reward_list{
+    overflow: hidden;
+}
+.reward_content h3{
+    font-size:3rem;
+    color:#353535;
+    margin-top:56px;
+}
+.reward_content p{
+    font-size:1.8rem;
+    color:#353535;
+    margin-top:20px;
+}
+.reward_list li{
+    position: relative;
+    overflow: hidden;
+    margin-bottom:3px;
+    background:#fff;
+}
+.reward_list li .go{
+    position: absolute;
+    right:34px;
+    top:78px;
+}
+.reward_button{
+    width: 150px;
+    height:238px;
+    position: absolute;
+    right:-51px;
+    top:-94px;
+    transform:rotate(135deg);
+}
+.reward_use{
+    width:562px;
+    height:107px;
+    position: absolute;
+    top:903px;
+    left:95px;
+}
+.back{
+    height:70px;
+    background:#fff;
+    overflow: hidden;
+}
+.back>div{
+    width:70px;
+    height:70px;
+    overflow: hidden;
+}
+.back>div>img{
+    width:30px;
+    transform:rotate(180deg);
+    display:block;
+    margin-top:10px;
+    margin-left:15px;
+}
+.dail_entity{
+    width:682px;
+    height:681px;
+    position:relative;
+}
+.dail_specifc,.dail_annulus{
+    position:absolute;
+    transition: 0.45s;
+    transition-timing-function: linear;
+}
+.state{
+    margin-top:20px;
+}
+.draw_list{
+    margin-top:20px;
+}
+.draw_list h3, .state h3{
+    font-size:3rem;
+    color:#fdeccd;
+    text-align: center;
+    margin-bottom:22px;
+}
+.state p{
+    font-size:1.7rem;
+    color:#fdeccd;
+    line-height:2.2rem;
+    padding:0px 63px;
+    margin-bottom:10px;
+}
+/*中奖名单*/
+.list{
+    width:495px;
+    height:191px;
+    margin:0px auto;
+    border:1px solid #798aeb;
+    padding-top:5px;
+}
+        .list li{
+        font-size:2rem;
+        color:#f8444c;
+        text-align: center;
+        line-height:36px;
+    }
+    .surplus{
+        width:292px;
+        height:58px;
+        margin:10px auto;
+        border-radius:30px;
+        font-size:2.8rem;
+        color:#fff2c7;
+        text-align: center;
+        line-height: 58px;
+        margin-bottom:20px;
+        margin-top:305px;
+    }
+    .code{
+    width:200px;
+    height:30px;
+    position: absolute;
+    top: 668px;
+    left: 235px;
+    font-size:2.1rem;
+    line-height:30px;
+    color:#f8e17c;
+}
+/*小财神*/
+.xcs_box{
+    display:none;
+}
+@keyframes  sash_button{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(720deg);
+    }
+}
+.sash_button{
+    position: absolute;
+    top: 872px;
+    left: 291px;
+    animation:sash_button 2s ;
+    animation-delay:0.5s;
+}
+@keyframes  xcs_right{
+    from{
+        left:0px;
+    }
+    to{
+        left:1100px;
+    }
+}
+.xcs_right{
+    display: block;
+    position: absolute;
+    top:300px;
+    z-index:10;
+    left:-300px;
+    animation:xcs_right 2s ;
+    animation-fill-mode:forwards;
+    animation-delay:2s;
+    animation-timing-function:linear;
+}
+@keyframes  xcs_left{
+    from{
+        left:1100px;
+    }
+    to{
+        left:-300px;
+    }
+}
+.xcs_left{
+    display: block;
+    position: absolute;
+    top:800px;
+    z-index:20;
+    animation:xcs_left 2s ;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+}
+.xcs_left img, .xcs_right img, .xcs_ult img{
+    width:250px;
+}
+@keyframes  xcs_ult{
+    0%{
+        left:600px;
+    }
+    100%{
+        left:500px;
+    }
+}
+.xcs_ult{
+    display: block;
+    position: absolute;
+    top:163px;
+    left:1100px;
+    z-index:20;
+    animation:xcs_ult 2s ;
+    animation-fill-mode:forwards;
+    animation-delay:4.5s;
+    animation-timing-function:linear;
+}
+@keyframes  xcs_ult_img{
+    0%{
+        width:250px;
+        right: -250px;
+        top: 0px;
+    }
+    100%{
+        width:150px;
+        right: -244px;
+        top: 172px;
+    }
+}
+.xcs_ult img{
+    width:250px;
+    right: -250px;
+    top: 0px;
+    animation:xcs_ult_img 2s ;
+    animation-fill-mode:forwards;
+    animation-delay:7s;
+    animation-timing-function:linear;
+    position: absolute;
+}
+
+.foot_statement{
+    height:40px;
+    font-size:2rem;
+    line-height: 40px;
+    color:#fff;
+    margin-top: 20px;
+    text-align:center;
+
+}
+
+.container {
+    width: 750px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.reward_title {
+    font-size: 2.6rem !important;
+}

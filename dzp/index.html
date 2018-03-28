@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:10px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=750,user-scalable=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>幸运抽奖</title>    
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/liMarquee.css">
+    <link rel="stylesheet" href="./css/dzp.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/init.js?a=8"></script>
+    <script>
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"数字"部分
+        _czc.push(["_setAccount", "1264042713"]);
+    </script>    
+    <script>
+        var t1 = new Date().getTime();
+    </script>
+    <script type="application/javascript">
+        $(function(){  
+            pushHistory();  
+            window.addEventListener("popstate", function(e) {  
+                if(document.getElementById('jiangpin').innerHTML == "open"){
+                    document.getElementById('jiangpin').innerHTML = "close";
+                    $('.my_reward').hide();
+                    window.location.reload();                
+                }else{
+                    // 抽奖页面继续后退的url
+                    window.location.href="http://zjd2.winsale.top/";
+                }  
+            }, false);  
+            function pushHistory() {  
+                var state = {  
+                    title: "title",  
+                    url: "#"  
+                };  
+                window.history.pushState(state, "title", "#");  
+            }              
+        });  
+    </script>
+</head>
+<body>
+    <p id="jiangpin" style="font-size:0">open</p>
+    <div class="container" style="background:url('/images/sqb_dail_bg3.jpg?a=6') no-repeat center center;">
+        <div class="surplus">
+            今日剩余 :&nbsp;<span>5</span>次
+        </div>
+        <section class="dail">
+            <img class="annulus" src="/images/sqb_annulus2.png" alt="">
+            <img class="dail_content" src="/images/dail_content114.png?a=43" alt="" style="transition: 2s; transform: rotate(780deg);">
+            <img class="dail_button" id="dail_button" src="/images/sqb_dail_button2.png" alt="">
+        </section>
+        <section class="draw_list" id="demo">
+            <h3>中奖名单</h3>
+            <ul class="list str_wrap noStop str_vertical" id="demo1" style="border: 3px solid #f8cf9b;background: #fff2c7;">
+                <div class="str_move str_origin" style="top: -255.72px;">
+                    <li>恭喜137****6548获得88元微信红包</li>
+                    <li>恭喜158****7558获得100元话费充值卡</li>
+                    <li>恭喜137****2311获得面值200元京东卡</li>
+                    <li>恭喜152****6252获得40000元免息借款</li>
+                    <li>恭喜187****8544获得88元微信红包</li>
+                    <li>恭喜137****6548获得面值200元京东卡</li>
+                    <li>恭喜158****7558获得40000元免息借款</li>
+                    <li>恭喜137****2311获得面值200元京东卡</li>
+                    <li>恭喜152****6252获得40000元免息借款</li>
+                    <li>恭喜187****8544获得88元微信红包</li>
+                    <!-- <div class="str_move str_move_clone" style="top: 100%; bottom: auto; height: 360px;">
+                        <li>恭喜137****6548获得88元微信红包</li>
+                        <li>恭喜158****7558获得100元话费充值卡</li>
+                        <li>恭喜137****2311获得面值200元京东卡</li>
+                        <li>恭喜152****6252获得40000元免息借款</li>
+                        <li>恭喜187****8544获得88元微信红包</li>
+                        <li>恭喜137****6548获得面值200元京东卡</li>
+                        <li>恭喜158****7558获得40000元免息借款</li>
+                        <li>恭喜137****2311获得面值200元京东卡</li>
+                        <li>恭喜152****6252获得40000元免息借款</li>
+                        <li>恭喜187****8544获得88元微信红包</li>
+                    </div>
+                    <div class="str_move str_move_clone" style="bottom: 100%; top: auto; height: 360px;">
+                        <li>恭喜137****6548获得88元微信红包</li>
+                        <li>恭喜158****7558获得100元话费充值卡</li>
+                        <li>恭喜137****2311获得面值200元京东卡</li>
+                        <li>恭喜152****6252获得40000元免息借款</li>
+                        <li>恭喜187****8544获得88元微信红包</li>
+                        <li>恭喜137****6548获得面值200元京东卡</li>
+                        <li>恭喜158****7558获得40000元免息借款</li>
+                        <li>恭喜137****2311获得面值200元京东卡</li>
+                        <li>恭喜152****6252获得40000元免息借款</li>
+                        <li>恭喜187****8544获得88元微信红包</li>
+                    </div> -->
+                </div>
+            </ul>
+        </section>
+        <section class="state">
+            <h3>活动说明</h3>
+            <p>1.实物类奖品请将在活动结束后5-10个工作日安排发货，请耐心等待</p>
+            <p>2.优惠券类奖品的使用规则详见每个优惠券的介绍页</p>
+            <p>3.请兑换后仔细阅读使用流程，如有疑问可直接联系客服专线：
+            0755-82700170（工作日10:00-18:00）
+            </p>
+            <p>4.通过非法途径获得奖品的，主办方有权不提供奖品，如有必要，将采
+            取法律途径维权。
+            </p>
+        </section>
+        <div class="reward" style="display: none;">
+            <div class="reward_box">
+                <img class="reward_img" src="/images/reward.png" alt="">
+                <img class="reward_close" src="/images/close.png" alt="">
+                <div class="reward_title">恭喜获得：4万元借你用 完全100%免息</div>
+                <div class="reward_info reward_use_link" href="https://mkt.360jie.com.cn/activity/ch/MAX/lanmu5">
+                    <img src="http://zjd.winsale.top/ToolFiles/UpFile/Img/Links/20180316/20180316113601_4872.jpg" alt="">
+                </div>
+            </div>
+            <div class="code"></div>
+            <div class="reward_use reward_use_link" id="reward_use_link" href="https://mkt.360jie.com.cn/activity/ch/MAX/lanmu5"></div>
+        </div>
+        <div class="my_reward">
+            <div class="back">
+                <div>
+                    <img src="/images/go.png" alt="">
+                </div>
+            </div>
+            <div class="top">
+            <div class="top_service">客服：</div>
+                <div class="">
+                    <img src="/images/phone.png" alt="">0371-65889111
+                </div>
+            </div>
+            <ul class="reward_list"></ul>
+        </div>
+        <div class="reward_button"></div>
+        <div class="xcs_box">
+            <a class="xcs_left" href="">
+                <img src="/images/xcs_left.gif" alt="">
+            </a>
+            <a class="xcs_right" href="">
+                <img src="/images/xcs_right.gif" alt="">
+            </a>
+            <a class="xcs_ult" href="">
+                <img src="/images/xcs_left.gif" alt="">
+            </a>
+        </div>
+    </div>
+    <script src="/js/jquery.liMarquee.js"></script>
+    <script src="/js/clipboard.min.js"></script>
+    <script>
+
+        var btn = document.getElementById('dail_button');
+        var clipboard = new Clipboard(btn);
+
+        // 无缝滚动
+        $(function () {
+            $('.list').liMarquee({ 'direction': 'up', 'scrollamount': '20', 'scrolldelay': '1000', 'hoverstop': false });
+        });
+
+        var activity_id = "114";
+        var inter_annulus = 0;
+        var inter_specifc = 0;
+        var city = '';
+        var src = "3"
+        var sash_num = ""; // 第几次弹出框
+        var sash_link = ''; // 跳转的链接
+
+        // 将链接复制到跳转的链接上
+        $('.xcs_box a').attr('href', sash_link)
+
+        // 抽奖次数
+        var draw_num = "6";
+
+        // 旋转的角度
+        var deg = 0;
+
+
+        // 抽奖开关
+        var is_shade = true;
+
+        // 默认旋转圈数
+        var circle = 3;
+
+        // 中奖表id
+        var prize_id;
+
+        // 初始转盘边框角度
+        var deg_annulus = 0;
+
+        var couponid = '';
+
+        // 中奖登记id
+        var can_id;
+
+        // 抽奖次数
+        var myDate = new Date();
+        var day = myDate.toLocaleDateString()
+        var timestamp = Date.parse(new Date()) / 1000;
+
+
+
+      
+
+        // 判断是否符合第几次弹框的事件
+        function sash() {
+        }
+
+        sash()
+
+       
+        $('.dail_button').click(function () {
+            function shade(e) {
+                $('#reward_use_link').unbind('click');
+                $('.dail_content').css('transition', '2s')
+                if (is_shade) {
+                    // 关闭转盘开关
+                    is_shade = false
+                    //减去抽奖次数
+                    $.post("/home/click", function (e2) {
+                      
+                        if (e2.n == 0)
+                        {
+                            alert("抽奖次数已经没了额");
+                            is_shade = true;
+                            return;
+                        }
+                        data_num = e2.position
+                        couponid = e2.id
+
+                        $('.surplus span').text(data_num);
+                        // 转的圈数
+                        deg = 360 * circle
+                        circle += 3
+                        //    28~-27为第一个 50元现金红包
+                        //    -30~-86为第二个 iphone8
+                        //    -90~-148为第三个 ipadpro
+                        //    -151~-209为第四个 超级福利包
+                        //    -214~270为第五个 100万意外险
+                        //    -274~27为第6个 免费英语课程
+
+                        // 判断中的哪个，然后对准度数
+                        switch (parseInt(6) - 1) {
+                            case 0:
+                                random = random_num(26, -32)
+                                random = 24
+                                break;
+                            case 1:
+                                random = random_num(-34, -93)
+                                random = -54
+                                break;
+                            case 2:
+                                random = random_num(-95, -153)
+                                random = -100
+                                break;
+                            case 3:
+                                random = random_num(-155, -212)
+                                random = -171
+                                break;
+                            case 4:
+                                random = random_num(-214, 272)
+                                random = -268
+                                break;
+                            case 5:
+                                random = random_num(-274, 30)
+                                random = -300
+                                break;
+                        }
+
+                        // 拼接角度
+                        deg += random
+                        deg_annulus = parseInt(deg_annulus) - 360
+                        deg_str = 'rotate(' + deg + 'deg)'
+                        deg_annulus_str = 'rotate(' + deg_annulus + 'deg)'
+
+                        //$('.dail_specifc').css('transform', deg_str);
+                        //$('.dail_annulus').css('transform', deg_annulus_str);
+
+                        $('.dail_content').css('transform', deg_str);
+
+                        // 修改弹出框信息
+			            document.getElementById('jiangpin').innerHTML = "open";
+                        if (e2.link == '##') {
+                            $('.reward_img').attr('src', '/images/reward2.png')
+                        } else {
+                            $('.reward_img').attr('src', '/images/reward.png')
+                        }
+
+                        $('.reward_info>img').attr('src', e2.imgurl)
+                        $('.reward_title').text(e2.title)
+                        $('.reward_use_link').attr('href', e2.link)
+                        $('.reward_use_link').attr('prize_id', prize_id)
+
+                        // 领奖触发事件
+                        $('#reward_use_link').click(function (e) {
+				        document.getElementById('jiangpin').innerHTML = "open";
+                            $.post("/home/setclick", { id: e2.id }, function () {
+                                window.location.href = e2.link;
+                            })
+
+                        })
+
+                        setTimeout(function (e) {
+
+                            //重置抽奖开关
+                            is_shade = true
+
+                            // 显示中奖弹出框
+                            $('.reward').show()
+
+
+                        }, 2500)
+
+                    }, 'json')
+                }
+            }
+            shade()
+
+        })
+
+        /****************************** 访客记录开始 **************************************/
+
+
+     
+
+        //    关闭中奖提醒
+        $('.reward_close').click(function (e) {
+
+            $('.reward').hide()
+
+            sash()
+        })
+
+        // 显示我的奖品
+        $('.reward_button').click(function (e) {
+        document.getElementById('jiangpin').innerHTML = "open";
+            $.post("/home/GetJianPin", function (data)
+            {
+                var reward_list = "";
+                $.each(data, function (i, item) {
+                    reward_list += '  <li class="reward_list_li" prize_id="' + item.id + '" link_url="' + item.link_url + '"><div class="reward_coupon_img"><img src="' + item.bimg + '"></div><div class="reward_content"><h3>' + item.title + '</h3><p>2018-03-28</p></div><img class="go" src="/images/go.png" alt=""></li>';
+                });
+
+                $(".reward_list").html(reward_list);
+            })
+
+            $('.my_reward').show()
+        })
+
+        // 隐藏我的奖品列表
+        $('.back>div').click(function (e) {
+        document.getElementById('jiangpin').innerHTML = "open";
+            $('.my_reward').hide()
+        })
+
+        // 使用优惠券
+        $('.reward_list').on('click', '.reward_list_li', function (e) {
+
+            re_link = $(this).attr('link_url');
+            var pro_id = $(this).attr('prize_id');
+          
+
+            $.post("/home/setclick", { id: pro_id }, function () {
+                window.location.href = re_link;
+            })
+
+
+
+        })
+        // 封装定时器（页面访问时间）
+        function remain_time(activity_id, recordid) {
+
+
+        }
+
+        /******************************** 访客记录结束 ************************************/
+    </script>
+
+
+</body></html>
